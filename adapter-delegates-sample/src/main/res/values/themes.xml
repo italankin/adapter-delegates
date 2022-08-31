@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="Theme.AdapterDelegatesSample" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#0060a8</item>
+        <item name="colorOnPrimary">#ffffff</item>
+        <item name="colorSecondary">#984061</item>
+        <item name="colorOnSecondary">#ffffff</item>
+    </style>
+</resources>
