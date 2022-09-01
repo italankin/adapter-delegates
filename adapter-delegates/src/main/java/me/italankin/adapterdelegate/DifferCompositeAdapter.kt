@@ -26,19 +26,33 @@ class DifferCompositeAdapter<T : Diffable> private constructor(
         }
     })
 
+    @Deprecated(
+        "Use submitDataset() instead", level = DeprecationLevel.ERROR,
+        replaceWith = ReplaceWith("submitDataset")
+    )
+    override fun setDataset(data: List<T>?) {
+        throw UnsupportedOperationException("Use submitDataset() instead")
+    }
+
+    /**
+     * Submit [data] to this adapter
+     */
     fun submitDataset(data: List<T>) {
         if (data === dataset) {
             throw IllegalArgumentException("An original dataset should not be submitted, create a copy instead")
         }
-        setDataset(data)
+        super.setDataset(data)
         differ.submitList(data)
     }
 
+    /**
+     * Submit [data] to this adapter, invoking [commitCallback] when changes are committed to adapter
+     */
     fun submitDataset(data: List<T>, commitCallback: Runnable) {
         if (data === dataset) {
             throw IllegalArgumentException("An original dataset should not be submitted, create a copy instead")
         }
-        setDataset(data)
+        super.setDataset(data)
         differ.submitList(data, commitCallback)
     }
 
