@@ -58,11 +58,11 @@ Then create an instance of `CompositeAdapter` and set as adapter of `RecyclerVie
 
 ```kotlin
 val adapter = CompositeAdapter.Builder<Any>(this)
-	.add(TitleAdapterDelegate())
-	// add more adapters if you need
-	// an optional viewType can be provided:
-	.add(R.layout.item_title, TitleAdapterDelegate())
-	.create()
+    .add(TitleAdapterDelegate())
+    // add more adapters if you need
+    // an optional viewType can be provided:
+    .add(R.layout.item_title, TitleAdapterDelegate())
+    .create()
 
 // provide a dataset for adapter
 adapter.setDataset(createDataset())
@@ -75,10 +75,10 @@ You can use `CompositeAdapter.Builder` methods to set dataset and attach adapter
 
 ```kotlin
 val adapter = CompositeAdapter.Builder<Any>(this)
-	.add(TitleAdapterDelegate())
-	.dataset(createDataset())
-	.recyclerView(recyclerView)
-	.create()
+    .add(TitleAdapterDelegate())
+    .dataset(createDataset())
+    .recyclerView(recyclerView)
+    .create()
 ```
 
 ### Usage with `DiffUtil`
@@ -88,7 +88,7 @@ The library provides [`Diffable`](adapter-delegates/src/main/java/me/italankin/a
 ```kotlin
 class Title(
     // provide unique ID for this item
-	override val id: Long,
+    override val id: Long,
     val title: String
 ) : Diffable {
 
