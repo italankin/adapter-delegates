@@ -28,9 +28,9 @@ dependencies {
 
 ### Write some code
 
-Base components of the library are [`AdapterDelegate`](adapter-delegates/src/main/java/me/italankin/adapterdelegate/AdapterDelegate.kt) and [`CompositeAdapter`](adapter-delegates/src/main/java/me/italankin/adapterdelegate/CompositeAdapter.java).
+Base components of the library are [`AdapterDelegate`](adapter-delegates/src/main/java/me/italankin/adapterdelegates/AdapterDelegate.kt) and [`CompositeAdapter`](adapter-delegates/src/main/java/me/italankin/adapterdelegates/CompositeAdapter.java).
 
-You can either implement `AdapterDelegate` directly or use [`BaseAdapterDelegate`](adapter-delegates/src/main/java/me/italankin/adapterdelegate/BaseAdapterDelegate.kt) as a base class for your delegates:
+You can either implement `AdapterDelegate` directly or use [`BaseAdapterDelegate`](adapter-delegates/src/main/java/me/italankin/adapterdelegates/BaseAdapterDelegate.kt) as a base class for your delegates:
 
 ```kotlin
 class TitleAdapterDelegate : BaseAdapterDelegate<TitleAdapterDelegate.ViewHolder, Title>() {
@@ -84,7 +84,7 @@ val adapter = CompositeAdapter.Builder<Any>(this)
 
 ### Usage with `DiffUtil`
 
-The library provides [`Diffable`](adapter-delegates/src/main/java/me/italankin/adapterdelegate/Diffable.kt) interface:
+The library provides [`Diffable`](adapter-delegates/src/main/java/me/italankin/adapterdelegates/Diffable.kt) interface:
 
 ```kotlin
 class Title(

@@ -3,8 +3,8 @@ package me.italankin.adapterdelegates.sample
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import me.italankin.adapterdelegate.Diffable
-import me.italankin.adapterdelegate.DifferCompositeAdapter
+import me.italankin.adapterdelegates.Diffable
+import me.italankin.adapterdelegates.DifferCompositeAdapter
 import me.italankin.adapterdelegates.sample.delegate.TextAdapterDelegate
 import me.italankin.adapterdelegates.sample.delegate.TitleAdapterDelegate
 import me.italankin.adapterdelegates.sample.util.RandomDataset

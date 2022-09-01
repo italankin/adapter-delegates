@@ -3,7 +3,7 @@ package me.italankin.adapterdelegates.sample.delegate
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import me.italankin.adapterdelegate.BaseAdapterDelegate
+import me.italankin.adapterdelegates.BaseAdapterDelegate
 import me.italankin.adapterdelegates.sample.R
 import me.italankin.adapterdelegates.sample.item.Title
 

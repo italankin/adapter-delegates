@@ -1,6 +1,6 @@
 package me.italankin.adapterdelegates.sample.item
 
-import me.italankin.adapterdelegate.Diffable
+import me.italankin.adapterdelegates.Diffable
 import me.italankin.adapterdelegates.sample.util.IdGenerator
 
 class Text(

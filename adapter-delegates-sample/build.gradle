@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "me.italankin.adapterdelegates.sample"
-        minSdk 23
+        minSdk 19
         targetSdk 32
     }
 

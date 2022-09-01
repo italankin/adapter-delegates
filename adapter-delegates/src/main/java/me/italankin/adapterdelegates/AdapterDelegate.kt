@@ -1,4 +1,4 @@
-package me.italankin.adapterdelegate
+package me.italankin.adapterdelegates
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
