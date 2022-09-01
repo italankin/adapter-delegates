@@ -1,4 +1,5 @@
-# Adapter Delegates
+# Adapter Delegates [![Release](https://jitpack.io/v/me.italankin/adapter-delegates.svg)](https://jitpack.io/#me.italankin/adapter-delegates)
+
 
 An opinionated library for working with `RecyclerView`'s adapters.
 
