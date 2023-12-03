@@ -17,7 +17,7 @@ interface AdapterDelegate<VH : RecyclerView.ViewHolder, T> {
      *
      * @param adapter adapter
      */
-    fun onAttached(adapter: CompositeAdapter<T>)
+    fun onAttached(adapter: CompositeAdapter<*>)
 
     /**
      * Create [RecyclerView.ViewHolder].

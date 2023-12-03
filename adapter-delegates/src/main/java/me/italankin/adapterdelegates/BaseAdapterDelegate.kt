@@ -17,7 +17,7 @@ abstract class BaseAdapterDelegate<VH : RecyclerView.ViewHolder, T> : AdapterDel
     /**
      * @return adapter, which this delegate is attached to
      */
-    protected lateinit var adapter: CompositeAdapter<T>
+    protected lateinit var adapter: CompositeAdapter<*>
 
     /**
      * Get layout resource identifier for view holder's layout.
@@ -35,7 +35,7 @@ abstract class BaseAdapterDelegate<VH : RecyclerView.ViewHolder, T> : AdapterDel
      */
     protected abstract fun createViewHolder(itemView: View): VH
 
-    override fun onAttached(adapter: CompositeAdapter<T>) {
+    override fun onAttached(adapter: CompositeAdapter<*>) {
         this.adapter = adapter
     }
 
@@ -59,7 +59,8 @@ abstract class BaseAdapterDelegate<VH : RecyclerView.ViewHolder, T> : AdapterDel
         return 0
     }
 
+    @Suppress("UNCHECKED_CAST")
     fun getItem(position: Int): T {
-        return adapter.getItem(position)
+        return adapter.getItem(position) as T
     }
 }
