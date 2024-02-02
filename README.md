@@ -22,7 +22,7 @@ Add dependency in your module (e.g. `app/build.gradle`):
 
 ```groovy
 dependencies {
-    implementation 'me.italankin:adapter-delegates:1.0.0'
+    implementation 'me.italankin:adapter-delegates:1.1.0'
 }
 ```
 
